@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Local Bird Species",
+    "version": "1.0",
+    "description": "Displays recent notable bird sightings in your area.",
+    "permissions": [
+      "activeTab",
+      "geolocation",
+      "storage",
+      "https://commons.wikimedia.org/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
